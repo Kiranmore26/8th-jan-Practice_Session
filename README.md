@@ -1,5 +1,3 @@
-# 8th-jan-Practice_Session
-
 package Anudip;
 
 import java.util.Scanner;
@@ -39,6 +37,7 @@ public class Practice {
 		
 		case 2:
 			System.out.println("Find out the grade (accept marks of 5 subject)");
+			int Total_marks=500;
 			int English;
 			int Hindi;
 			int marathi;
@@ -54,32 +53,26 @@ public class Practice {
 			maths=sc.nextInt();
 			System.out.println("Enter the marks of Science:");
 			Science=sc.nextInt();
-			 int Total=English+marathi+maths+Hindi+Science;
-			System.out.println("Total of all the Marks is :  "  +Total);
-			if(Total>=400  && Total <500)
-			{
-				System.out.println("You have got A Grade");
-			}
-			else if (Total>=300 && Total<=399)
-			{
-				System.out.println("You have got b Grade");
-
-			}
-			else if (Total>=200 && Total<=299)
-			{
-				System.out.println("You have got c Grade");
-
-			}
-			else if (Total>=100 && Total<=199)
-			{
-				System.out.println("You have got d Grade");
-
-			}
-			else
-			{
-				System.out.println("Your are failed...");
-			}
+			 int Total_obtainmarks=English+marathi+maths+Hindi+Science;
+			 System.out.println("Total obtain marks are "+Total_obtainmarks);
+			 int percentage = (maths+marathi+Hindi+English+marathi/500)*100;
 				
+				if(percentage>=80)
+				{
+					System.out.println("A+ Grade");
+				}
+				else if(percentage>=60)
+				{
+					System.out.println("A Grade");
+				}
+				else
+				{
+					System.out.println("B Grade");
+				}
+				
+			
+
+		
 			
 			break;
 			
